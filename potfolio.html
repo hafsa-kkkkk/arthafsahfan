@@ -3,138 +3,64 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artistry by [Your Name]</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg-color: #f9f9f9;
-      --accent-color: #333;
-      --highlight-color: #a88add;
-    }
-
-    body {
-      margin: 0;
-      font-family: 'Open Sans', sans-serif;
-      background: var(--bg-color);
-      color: var(--accent-color);
-    }
-
-    header {
-      background: var(--highlight-color);
-      color: white;
-      padding: 2rem;
-      text-align: center;
-      font-family: 'Playfair Display', serif;
-    }
-
-    nav {
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      background: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      padding: 1rem;
-    }
-
-    nav a {
-      text-decoration: none;
-      color: var(--accent-color);
-      font-weight: bold;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 2rem;
-    }
-
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1.5rem;
-    }
-
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .store-item {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 1rem;
-      background: white;
-    }
-
-    .store-item img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .store-item h3 {
-      margin-top: 0.5rem;
-    }
-
-    footer {
-      text-align: center;
-      padding: 2rem;
-      background: #eee;
-      margin-top: 2rem;
-    }
-  </style>
+  <title>Art & Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <h1>Artistry by [Your Name]</h1>
-    <p>Expressing the soul through colors and composition</p>
+    <h1>Artistry Aura</h1>
+    <nav>
+      <ul>
+        <li><a href="#themes">Themes</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#portfolio">Portfolio</a>
-    <a href="#themes">Themes</a>
-    <a href="#store">Store</a>
-  </nav>
-
-  <section id="portfolio">
-    <h2>Portfolio Gallery</h2>
-    <div class="gallery">
-      <img src="images/art1.jpg" alt="Artwork 1">
-      <img src="images/art2.jpg" alt="Artwork 2">
-      <img src="images/art3.jpg" alt="Artwork 3">
-    </div>
-  </section>
-
   <section id="themes">
-    <h2>Themed Collections</h2>
-    <p>Curated art by theme such as Minimalism, Nature, Surrealism.</p>
-    <div class="gallery">
-      <img src="images/theme1.jpg" alt="Minimalism">
-      <img src="images/theme2.jpg" alt="Nature">
-      <img src="images/theme3.jpg" alt="Surrealism">
+    <h2>Themed Artwork</h2>
+    <div class="theme-gallery">
+      <div class="theme">
+        <img src="theme1.jpg" alt="Theme 1" />
+        <h3>Surreal Dreams</h3>
+        <p>Exploring vivid imagination beyond reality.</p>
+      </div>
+      <div class="theme">
+        <img src="theme2.jpg" alt="Theme 2" />
+        <h3>Urban Echoes</h3>
+        <p>The silent stories of city life through color.</p>
+      </div>
     </div>
   </section>
 
   <section id="store">
-    <h2>Shop the Collection</h2>
-    <div class="gallery">
-      <div class="store-item">
-        <img src="images/shop1.jpg" alt="Print 1">
-        <h3>Dreamscape</h3>
-        <p>$35.00</p>
-        <p>High quality art print. 8x10 in. Matte finish. Ships worldwide.</p>
-      </div>
-      <div class="store-item">
-        <img src="images/shop2.jpg" alt="Print 2">
-        <h3>Still Silence</h3>
-        <p>$42.00</p>
-        <p>Original abstract artwork. 11x14 in. Premium paper.</p>
-      </div>
+    <h2>Art Store</h2>
+    <div class="store-item">
+      <img src="art1.jpg" alt="Art 1" />
+      <h3>Cosmic Dancer</h3>
+      <p>$45.00</p>
+      <p>Abstract energy in motion. 12x18 print.</p>
+    </div>
+    <div class="store-item">
+      <img src="art2.jpg" alt="Art 2" />
+      <h3>Rustic Horizon</h3>
+      <p>$30.00</p>
+      <p>Minimalist landscape in soft tones. 8x10 print.</p>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div class="portfolio-gallery">
+      <img src="gallery1.jpg" alt="Gallery 1" />
+      <img src="gallery2.jpg" alt="Gallery 2" />
+      <img src="gallery3.jpg" alt="Gallery 3" />
     </div>
   </section>
 
   <footer>
-    <p>Copyright &copy; 2025 Artistry by [Your Name]. All rights reserved.</p>
+    <p>&copy; 2025 Artistry Aura. All rights reserved.</p>
   </footer>
 </body>
 </html>
